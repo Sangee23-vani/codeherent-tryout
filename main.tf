@@ -73,3 +73,9 @@ resource "aws_main_route_table_association" "main_route_table_association" {
   vpc_id = 
   route_table_id = 
 }
+
+resource "aws_subnet" "subnet1" {
+  cidr_block = 
+  vpc_id = aws_vpc.main
+  tags = {  }
+}
